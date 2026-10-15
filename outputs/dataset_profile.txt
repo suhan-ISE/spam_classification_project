@@ -1,0 +1,44 @@
+DATASET PROFILE
+
+Source CSV: C:\Users\HP\spam_classification_project\data\email.csv
+
+Original columns: ['Category', 'Message']
+
+Detected text column: Message
+
+Detected label column: Category
+
+Original row count: 5573
+
+Rows after cleaning: 5157
+
+Rows removed during cleaning: 416
+
+Missing values by original column:
+Category    0
+Message     0
+
+Exact duplicate rows in original data: 415
+
+Class distribution:
+label
+Ham (0)     4516
+Spam (1)     641
+
+Word-count summary:
+count    5157.000000
+mean       15.410704
+std        11.118902
+min         1.000000
+25%         7.000000
+50%        12.000000
+75%        22.000000
+max       171.000000
+
+
+
+Cleaning decisions: rows with missing labels, empty text, or exact duplicate text-label pairs are removed.
+
+Inspect the detected label mapping before interpreting spam-specific metrics.
+
+The training scripts use a stratified 70/15/15 train/validation/test split.
